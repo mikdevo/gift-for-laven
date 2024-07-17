@@ -1,82 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rose Animation</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .glowing-text {
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 40px;
-      color: #f594b8;
-      animation: glow 1.5s infinite alternate, colorchange 3s infinite;
-    }
-
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #f594b8, 0 0 20px #f594b8, 0 0 30px #f594b8, 0 0 40px #f594b8, 0 0 50px #f594b8, 0 0 60px #f594b8, 0 0 70px #f594b8;
-      }
-      to {
-        text-shadow: 0 0 20px #f594b8, 0 0 30px #f594b8, 0 0 40px #f594b8, 0 0 50px #f594b8, 0 0 60px #f594b8, 0 0 70px #f594b8, 0 0 80px #f594b8;
-      }
-    }
-
-    @keyframes colorchange {
-      0% {
-        color: #f594b8;
-      }
-      33% {
-        color: #ffcc00;
-      }
-      66% {
-        color: #00ccff;
-      }
-      100% {
-        color: #f594b8;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
-<body>
-  <div class="container">
-    <div class="glass"></div>
-    <div class="thorns">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+<body class="container">
+    <div class="flower__wrapper">
+        <div class="card_text">
+            <h1 class="wish_text_title">Laven</h1>
+            <h2 class="wish_text_sub">You're so sweet</h2>
+        </div>
+        <div class="flower__sparkles">
+            <div class="flower__sparkle"></div>
+            <div class="flower__sparkle"></div>
+            <div class="flower__sparkle"></div>
+            <div class="flower__sparkle"></div>
+            <div class="flower__sparkle"></div>
+            <div class="flower__sparkle"></div>
+            <div class="flower__sparkle"></div>
+            <div class="flower__sparkle"></div>
+        </div>
+        <div class="flower">
+            <div class="flower__steam-wrapper">
+                <div class="flower__leaf flower__leaf--first"></div>
+                <div class="flower__leaf flower__leaf--second"></div>
+                <div class="flower__steam">
+                    <div class="flower__steam-end"></div>
+                </div>
+            </div>
+            <div class="flower__head flower__head--main">
+                <div class="flower__petal flower__petal--back flower__petal--left flower__petal--back-left"></div>
+                <div class="flower__petal flower__petal--back flower__petal--right flower__petal--back-right"></div>
+                <div class="flower__petal flower__petal--front flower__petal--left flower__petal--front-left"></div>
+                <div class="flower__petal flower__petal--front flower__petal--right flower__petal--front-right"></div>
+                <div class="flower__center">
+                    <div class="flower__seeds">
+                        <div class="flower__seed"></div>
+                        <div class="flower__seed"></div>
+                        <div class="flower__seed"></div>
+                        <div class="flower__seed"></div>
+                        <div class="flower__seed"></div>
+                        <div class="flower__seed"></div>
+                        <div class="flower__seed"></div>
+                        <div class="flower__seed"></div>
+                        <div class="flower__seed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="glow"></div>
-    <div class="rose-leaves">
-      <div></div>
-      <div></div>
-    </div>
-    <div class="rose-petals">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div class="sparkles">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <div class="glowing-text">Laven</div>
+    <script src="script.js"></script>
 </body>
 </html>
